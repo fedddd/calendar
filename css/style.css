@@ -1,0 +1,152 @@
+* {
+margin:0px;
+padding:0px;
+font-family: "Arial"
+}
+.header{
+	width:100%;
+	height:150px;
+	background-color:#f4f4f4;
+	box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  }
+  
+  
+  .content{
+  width:100%;
+  margin:100px;
+  display:inline-block;
+  min-height:1200px;
+  
+  }
+  
+  .calendar{
+  display:inline-block;
+  position:relative;
+  }
+  
+ table{
+ min-width: 1050px;    
+ border-spacing:0px;
+ border: 1px solid #f1f1f1;
+ }
+
+  
+  td{    
+  width:150px;
+  height:150px;
+  border: 1px solid #f1f1f1;
+  padding:5px;
+  overflow:hidden;
+  vertical-align: top;
+  
+  }
+  .grey{
+      background-color: #f9f9f9;
+  }
+  
+ .selected{
+ background-color: #e4f1f9;
+  border: 2px solid #84c9ff;
+  }
+  
+  .event{
+ background-color: #c0e3ff;
+  }
+  
+  
+  
+  
+  
+ .popup{
+display: none;     
+position: absolute;
+left: 320px; top:150px;
+
+width:300px;
+height:330px;
+background-color:#fff;
+box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+
+} 
+
+.popup:after, .popup:before {
+content:"";
+position:absolute;
+background-color:#fff;
+left: -10px; top: 50px;
+
+border: 10px solid transparent;
+
+-webkit-transform: rotate(45deg);
+transform: rotate(45deg);
+box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+
+z-index: -1;
+}
+
+
+.popup:before{
+box-shadow: none;
+z-index: 1;
+}
+
+.popup form{
+padding:30px 50px;
+
+} 
+
+.popup form input {
+    margin-top: 10px;
+    width: 100%; 
+   } 
+
+.popup form textarea {
+    margin-top: 10px;
+    width: 100%; 
+    height: 100px; 
+    resize: none; 
+   } 
+ .popup form p {
+    margin-top: 10px; 
+   } 
+   
+   .day_text{
+       
+       color: grey;
+   }
+   .event_text{
+      font-weight:bold;
+      padding-top: 20px;
+   }
+   .name_text{
+      
+      padding-top: 20px; 
+   }
+   
+   table tr:nth-child(1) td:nth-child(1) p:nth-child(1):before{
+       content: "Понедельник, "
+   }
+   table tr:nth-child(1) td:nth-child(2) p:nth-child(1):before{
+       content: "Вторник, "
+   }
+   table tr:nth-child(1) td:nth-child(3) p:nth-child(1):before{
+       content: "Среда, "
+   }
+   table tr:nth-child(1) td:nth-child(4) p:nth-child(1):before{
+       content: "Четверг, "
+   }
+  table tr:nth-child(1) td:nth-child(5) p:nth-child(1):before{
+       content: "Пятница, "
+   }
+   table tr:nth-child(1) td:nth-child(6) p:nth-child(1):before{
+       content: "Суббота, "
+   }
+   table tr:nth-child(1) td:nth-child(7) p:nth-child(1):before{
+       content: "Воскресенье, "
+   }
+ 
+  
+  
+  
+  
+	
